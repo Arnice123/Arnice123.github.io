@@ -1,4 +1,18 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+
+function App() {
+  const [message, setMessage] = useState('Hello, React!');
+
+  return (
+    <div>
+      <h1>{"Welcome to my Website :)"}</h1>      
+    </div>
+  );
+}
+
+export default App;
+
+/*import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -23,3 +37,4 @@ function App() {
 }
 
 export default App;
+*/
