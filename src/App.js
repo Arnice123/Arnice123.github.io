@@ -1,40 +1,51 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import Experience from './Pages/Experience';
+import Home from './Pages/Home'
+import Passions from './Pages/Passions';
+import PreviousProject from './Pages/PreviousProjects';
+import Socials from './Pages/Socials';
+import './index.css';
 
-function App() {
-  const [message, setMessage] = useState('Hello, React!');
+const NavButtons = () => {
+  const navigate = useNavigate();
 
   return (
-    <div>
-      <h1>{"Welcome to my Website :)"}</h1>      
-    </div>
+    <nav>
+      <ul>
+        <li>
+          <button onClick={() => navigate('/')} style={{ color: 'pink' }}>Home</button>
+        </li>
+        <li>
+          <button onClick={() => navigate('/experience')} style={{ color: 'pink' }}>Experience</button>
+        </li>
+        <li>
+          <button onClick={() => navigate('/passions')} style={{ color: 'pink' }}>Passions</button>
+        </li>
+        <li>
+          <button onClick={() => navigate('/previousProject')} style={{ color: 'pink' }}>PreviousProject</button>
+        </li>
+        <li>
+          <button onClick={() => navigate('/socials')} style={{ color: 'pink' }}>Socials</button>
+        </li>
+      </ul>
+    </nav>
   );
-}
+};
 
-export default App;
-
-/*import logo from './logo.svg';
-import './App.css';
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavButtons />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/passions" element={<Passions />} />
+        <Route path="/previousProject" element={<PreviousProject />} />
+        <Route path="/socials" element={<Socials />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
-*/
