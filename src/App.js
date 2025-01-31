@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import ProfilePhoto from './ProfilePhoto';
-import Boxes from './Boxes';
+import Button from './Button';
 
 function App() {
   return (
     <div>
-      <h1 style={{ color: '#000333', fontSize: '2.5rem', textAlign: 'center' }}>About Me</h1>
+      <h1 style={{ color: '#FFFFFF', fontSize: '2.5rem', textAlign: 'center' }}>About Me</h1>
       <ProfilePhoto /> {}
-      <Boxes></Boxes>
+      <Button></Button>
     </div>
   );
 }

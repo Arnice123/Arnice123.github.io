@@ -1,8 +1,22 @@
-/* MyComponent.css */
+.container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    align-items: center; /* Vertically center the image and text */
+    gap: 16px; /* Add some space between the image and text */
+  }
+
+.about-me {
+    font-size: 20px; /* Adjust text size */
+    line-height: 1.3;
+    color: #ffffff; /* Adjust text color */
+    align-self: flex-start;
+}
+
 .profile-photo {
     width: 500px;
     border-radius: 8px;
     border: 2px solid #ccc;
+    justify-content: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 20px
+    /*margin: 20px;*/
+    margin-left: 20px;
 }
