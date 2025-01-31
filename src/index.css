@@ -15,3 +15,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+button {
+  color: pink;
+  background-color: transparent;
+  border: 2px solid pink;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: pink;
+  color: white;
+}

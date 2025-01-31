@@ -1,15 +1,51 @@
-import React, { useState } from 'react';
-import ProfilePhoto from './ProfilePhoto';
-import Button from './Button';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import Experience from './Pages/Experience';
+import Home from './Pages/Home'
+import Passions from './Pages/Passions';
+import PreviousProject from './Pages/PreviousProjects';
+import Socials from './Pages/Socials';
+import './index.css';
 
-function App() {
+const NavButtons = () => {
+  const navigate = useNavigate();
+
   return (
-    <div>
-      <h1 style={{ color: '#FFFFFF', fontSize: '2.5rem', textAlign: 'center' }}>About Me</h1>
-      <ProfilePhoto /> {}
-      <Button></Button>
-    </div>
+    <nav>
+      <ul>
+        <li>
+          <button onClick={() => navigate('/')} style={{ color: 'pink' }}>Home</button>
+        </li>
+        <li>
+          <button onClick={() => navigate('/experience')} style={{ color: 'pink' }}>Experience</button>
+        </li>
+        <li>
+          <button onClick={() => navigate('/passions')} style={{ color: 'pink' }}>Passions</button>
+        </li>
+        <li>
+          <button onClick={() => navigate('/previousProject')} style={{ color: 'pink' }}>PreviousProject</button>
+        </li>
+        <li>
+          <button onClick={() => navigate('/socials')} style={{ color: 'pink' }}>Socials</button>
+        </li>
+      </ul>
+    </nav>
   );
-}
+};
+
+const App = () => {
+  return (
+    <Router>
+      <NavButtons />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/passions" element={<Passions />} />
+        <Route path="/previousProject" element={<PreviousProject />} />
+        <Route path="/socials" element={<Socials />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
