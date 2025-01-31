@@ -23,7 +23,7 @@ const NavButtons = () => {
           <button onClick={() => navigate('/passions')} style={{ color: 'pink' }}>Passions</button>
         </li>
         <li>
-          <button onClick={() => navigate('/previousProject')} style={{ color: 'pink' }}>PreviousProject</button>
+          <button onClick={() => navigate('/previousProject')} style={{ color: 'pink' }}>Previous Projects</button>
         </li>
         <li>
           <button onClick={() => navigate('/socials')} style={{ color: 'pink' }}>Socials</button>
