@@ -26,8 +26,8 @@ function ProjectLink({ title, link, name, description, image_path }) {
 const PreviousProject = () => {
 
   return (
-    <div>
-      <h1 className='title'>Previous Projects</h1>
+    <div style={{marginBottom: '100px', fontSize:20, wordSpacing:1.25, lineHeight:1.5}}>
+      <h1 className='title' >Previous Projects</h1>
 
       <a href="https://github.com/Arnice123" style={{margin: 20}} className="button">
         <img
@@ -58,6 +58,20 @@ const PreviousProject = () => {
         description="This is a calculator that was designed without using the main math funciton in C++, cmath, intended to do complex calculations such as derivatives and integrals, it is still being worked on and actively developed"
         image_path="/images/Calculator.png"
       />
+
+      <hr></hr>
+
+      <div  style={{margin: 20, color: '#FFFFFF'}}>
+        I also have experience with minor projects that are not worth mentioning in/using: C, C#, C++, Python, JavaScript, HTML, CSS.<br />I have used Github, VS Code, Visual Studio and Unity for my previous projects as well.<br />
+        
+        I do have experience in RISC-V, but at an extremely weak level of knowledge as I only used it in one of my classes in a previous semseter.<br />
+
+        I used C and C++ for my previous classes and projects so I have around 2-3 years worth of experience with those languages.<br />
+
+        Python on the otherhand I have used less and only for two classes so I only have around a year of experience of active work with Python.<br />
+
+        JS, HTML, CSS I bobbed in and out of using them over the past 6ish years so I have fairly decent level of understanding of those languages.<br />
+      </div>
     </div>
   );
 };
