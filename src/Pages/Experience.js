@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css'
+import { FaLinkedin } from 'react-icons/fa';
 
 function Section({ title, children }) {
   return (
@@ -49,7 +50,34 @@ const Experience = () => {
           </li>
         </ul>
       </Section>
+     
+      <div style={{ margin: 20, textAlign: 'center' }}>
+      <a
+        href="https://www.linkedin.com/in/arya-akhavein-8b8029193/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          backgroundColor: '#0077B5',
+          color: '#FFFFFF',
+          padding: '10px 20px',
+          borderRadius: '5px',
+          textDecoration: 'none',
+          fontSize: '16px',
+          fontWeight: 'bold',
+          fontFamily: 'Arial, sans-serif',
+          transition: 'background-color 0.3s ease',
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#005582')}
+        onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#0077B5')}
+      >
+        <FaLinkedin style={{ marginRight: '10px', fontSize: '24px'}} />
+        Connect with Me on LinkedIn
+      </a>
+    </div>     
     </div>
+    
   );
 };
 
