@@ -1,14 +1,22 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import '../App.css'
+import '../Button.css';
 
 const PreviousProject = () => {
-  const navigate = useNavigate();
 
   return (
     <div>
-      <h1>Not Home Page</h1>
-      <p>Welcome to the Not Home page!</p>
-      <button onClick={() => navigate('/')}>Go to Home</button>
+      <h1 className='title'>Previous Projects</h1>
+
+      <a href="https://github.com/Arnice123" style={{margin: 20}} className="button">
+        <img
+          src="/images/Github.png" 
+          alt="Github Link"
+          className="button-image"
+        />
+      </a>
+
+      
     </div>
   );
 };
