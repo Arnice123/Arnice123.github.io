@@ -1,15 +1,21 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import '../App.css'
 
+function Section({ title, children }) {
+  return (
+    <div style={{ marginBottom: 40 }}>
+      <h2 style={{ borderBottom: '2px solid pink', paddingBottom: 5 }}>{title}</h2>
+      {children}
+    </div>
+  );
+}
+
 const Experience = () => {
-  const navigate = useNavigate();
 
   return (
-    <div>
-      <h1 className='title'>Not Home Page</h1>
-      <p>Welcome to the Not Home page!</p>
-      <button onClick={() => navigate('/')}>Go to Home</button>
+    <div style={{marginBottom: '100px',margin: '10px', fontSize:20, wordSpacing:1.25, lineHeight:1.5, color: '#FFFFFF'}}>
+      <h1 className='title'>Experience</h1>
+      
     </div>
   );
 };
