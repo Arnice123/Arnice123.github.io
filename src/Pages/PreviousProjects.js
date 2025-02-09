@@ -2,6 +2,17 @@ import React from 'react';
 import '../App.css'
 import '../Button.css';
 
+function ProjectLink({ title, link, name }) {
+  return (
+    <p style={{ margin: 20, color: '#FFFFFF' }}>
+      {title}:{' '}
+      <a style={{ color: 'pink' }} href={link} target="_blank" rel="noopener noreferrer">
+        {name}
+      </a>
+    </p>
+  );
+}
+
 const PreviousProject = () => {
 
   return (
@@ -16,26 +27,21 @@ const PreviousProject = () => {
         />
       </a>
 
-      <p style={{margin: 20, color: "#FFFFFF"}}>
-        My fighting game: {' '}
-        <a style={{ color: 'pink' }} href="https://play.unity.com/en/games/7a22f993-50c4-4830-95f2-9634187cfcbd/2d-fighting-game" target="_blank" rel="noopener noreferrer">
-          2D Fighting Game
-        </a>
-      </p>
-
-      <p style={{margin: 20, color: "#FFFFFF"}}>
-        My Machine Learning Snake: {' '}
-        <a style={{ color: 'pink' }} href="https://github.com/Arnice123/Machine-Learning-Snake" target="_blank" rel="noopener noreferrer">
-          2D Fighting Game
-        </a>
-      </p>
-
-      <p style={{margin: 20, color: "#FFFFFF"}}>
-        My Calculator: {' '}
-        <a style={{ color: 'pink' }} href="https://github.com/Arnice123/Complex-Calulator" target="_blank" rel="noopener noreferrer">
-          Calculator
-        </a>
-      </p>
+      <ProjectLink
+        title="My fighting game"
+        link="https://play.unity.com/en/games/7a22f993-50c4-4830-95f2-9634187cfcbd/2d-fighting-game"
+        name="2D Fighting Game"
+      />
+      <ProjectLink
+        title="My Machine Learning Snake"
+        link="https://github.com/Arnice123/Machine-Learning-Snake"
+        name="Machine Learning Snake"
+      />
+      <ProjectLink
+        title="My Calculator"
+        link="https://github.com/Arnice123/Complex-Calulator"
+        name="Calculator"
+      />
     </div>
   );
 };
