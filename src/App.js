@@ -14,24 +14,50 @@ const NavButtons = () => {
     <nav>
       <ul>
         <li>
-          <button onClick={() => navigate('/')} style={{ color: 'pink' }}>Home</button>
+          <button 
+            onClick={() => navigate('/')} 
+            className="text-pink-500 hover:text-black transition-colors"
+          >
+            Home
+          </button>
         </li>
         <li>
-          <button onClick={() => navigate('/experience')} style={{ color: 'pink' }}>Experience</button>
+          <button 
+            onClick={() => navigate('/experience')} 
+            className="text-pink-500 hover:text-black transition-colors"
+          >
+            Experience
+          </button>
         </li>
         <li>
-          <button onClick={() => navigate('/passions')} style={{ color: 'pink' }}>Passions</button>
+          <button 
+            onClick={() => navigate('/passions')} 
+            className="text-pink-500 hover:text-black transition-colors"
+          >
+            Passions
+          </button>
         </li>
         <li>
-          <button onClick={() => navigate('/previousProject')} style={{ color: 'pink' }}>Previous Projects</button>
+          <button 
+            onClick={() => navigate('/previousProject')} 
+            className="text-pink-500 hover:text-black transition-colors"
+          >
+            Previous Projects
+          </button>
         </li>
         <li>
-          <button onClick={() => navigate('/socials')} style={{ color: 'pink' }}>Socials</button>
+          <button 
+            onClick={() => navigate('/socials')} 
+            className="text-pink-500 hover:text-black transition-colors"
+          >
+            Socials
+          </button>
         </li>
       </ul>
     </nav>
   );
 };
+
 
 const App = () => {
   return (
