@@ -5,8 +5,8 @@ const ProfilePhoto = () => {
   return (
     <div className='container'>
       <img
-        src="/images/PP_Me_Photo.jpg"
-        alt="Me"        
+        src="/images/PP_Me_Photo.png"
+        alt="A photo of me"        
         className='profile-photo'
       />
       <div className="about-me">
