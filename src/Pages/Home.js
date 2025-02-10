@@ -5,7 +5,10 @@ import '../App.css'
 
 function Home() {
   return (
-    <div>
+    <div style={{
+      margin: 20,
+      fontFamily: 'Poppins, sans-serif'
+    }}>
       <h1 className='title'>About Me</h1>
       <ProfilePhoto /> {}
       <Button></Button>

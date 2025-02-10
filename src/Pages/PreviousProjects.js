@@ -26,7 +26,7 @@ function ProjectLink({ title, link, name, description, image_path }) {
 const PreviousProject = () => {
 
   return (
-    <div style={{marginBottom: '100px', fontSize:20, wordSpacing:1.25, lineHeight:1.5}}>
+    <div style={{marginBottom: '100px', fontSize:20, wordSpacing:1.25, lineHeight:1.5, fontFamily: 'Poppins, sans-serif'}}>
       <h1 className='title' >Previous Projects</h1>
 
       <a href="https://github.com/Arnice123" style={{margin: 20}} className="button">
