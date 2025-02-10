@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ProfilePhoto from '../ProfilePhoto';
-import Button from '../Button';
+import ProfilePhoto from '../Components/ProfilePhoto';
+import Button from '../Components/Button';
 import '../App.css'
 
 function Home() {

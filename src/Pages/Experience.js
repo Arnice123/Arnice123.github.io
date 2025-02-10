@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'
 import { FaLinkedin } from 'react-icons/fa';
-import Section from "../Section.js"
+import Section from "../Components/Section.js"
 
 
 const Experience = () => {

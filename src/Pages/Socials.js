@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope, FaInstagram, FaDiscord } from 'react-icons/fa';
-import SocialPreview from '../SocialPreview';
+import SocialPreview from '../Components/SocialPreview.js';
 import '../App.css'
 
 const Socials = () => {

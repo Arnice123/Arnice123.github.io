@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css'
-import '../Button.css';
+import '../Components/Button.css';
 
 function ProjectLink({ title, link, name, description, image_path, alt }) {
   return (

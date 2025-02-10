@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css'
-import Section from "../Section.js"
+import Section from "../Components/Section.js"
 
 function NavBar({href, name}) {
   return (
