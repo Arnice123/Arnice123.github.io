@@ -1,15 +1,32 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'; // Import icons
+import SocialPreview from '../SocialPreview';
 import '../App.css'
 
 const Socials = () => {
-  const navigate = useNavigate();
 
   return (
-    <div>
-      <h1 className='title'>Not Home Page</h1>
-      <p>Welcome to the Not Home page!</p>
-      <button onClick={() => navigate('/')}>Go to Home</button>
+    <div
+      style={{
+        margin: 20,
+        fontFamily: 'Poppins, sans-serif', // Smooth font from Google Fonts
+        textAlign: 'center',
+      }}
+    >
+      <h1 className='title'>My Socials</h1>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '20px',
+          flexWrap: 'wrap',
+        }}
+      >
+        
+        
+
+        
+      </div>
     </div>
   );
 };
