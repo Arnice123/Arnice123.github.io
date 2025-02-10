@@ -67,10 +67,31 @@ const Passions = () => {
       </div>
 
       {/* Sections */}
-      <Section id="dnd" title="Dungeons and Dragons" />
-      <Section id="mtg" title="Magic The Gathering" />
-      <Section id="games" title="Video Games" />
-      <Section id="hiking" title="Hiking" />
+      <Section id="dnd" title="Dungeons and Dragons">
+        I have been an active dnd player for the past 4 years, but I have been engaging with dnd content for over 7 years. 
+        I play regularly with two groups of friends, from both high school and university. <br/><br/>
+        <img
+          src="/images/DND.jpg"
+          alt="Me and my friends playing dungeons and dragons"
+          style={{width:'300px'}}
+        />
+
+        <br/>
+        I act as the dungeon master for my friends, coming up with the story as my friends act their way throughout. I spend around 6 hours a week total playing dungeons and dragons, and hopefully will continue to do so.
+      </Section>
+
+      <Section id="mtg" title="Magic the Gathering">
+        I have played Magic the Gathering for 3 years, participating in game formats, I only own 4 different decks, all of which are the commander format. I tend to play this game during the long breaks during my school days to relax and have fun with friends.
+
+      </Section>
+
+      <Section id="games" title="Video Games" >
+        I have been playing video games for many years, but I am faily active player of League of Legends, playing it with my friends for the past 2 years.
+      </Section>
+
+      <Section id="hiking" title="Hiking" >
+        t
+      </Section>
     </div>
   );
 };
