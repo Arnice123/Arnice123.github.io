@@ -76,7 +76,22 @@ const Passions = () => {
         </Section>
 
         <Section id="40k" title="Warhammer40k" >
-          t
+          I love the Warhammer40k universe, I have engaged with the community for over 2 years at this point and I am deeply engrossed into the lore, I can talk about it for over an hour straight.
+          I own a 3d printer, that has unfortuantly broken but before it broke I was able to print a few miniatures, such as the ones that shown below.<br/>
+
+           <img
+            src="/images/knight.jpg"
+            alt="Me and my friends at the peak of the first needle"
+            style={{width:'300px'}}
+          />
+          <br/>
+          <img
+            src="/images/Soldiers.jpg"
+            alt="Me and my friends at the peak of the first needle"
+            style={{height:'200px'}}
+          />
+          <br/><br/>
+          I am a very huge fan of the Death Guard if it wasn't obvious.
         </Section>
       </div>
 
