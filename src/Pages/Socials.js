@@ -3,6 +3,7 @@ import { FaLinkedin, FaGithub, FaEnvelope, FaInstagram, FaDiscord } from 'react-
 import SocialPreview from '../Components/SocialPreview.js';
 import '../App.css'
 
+/*Page for showing where people can find me*/ 
 const Socials = () => {
 
   return (

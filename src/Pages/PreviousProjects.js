@@ -23,10 +23,19 @@ function ProjectLink({ title, link, name, description, image_path, alt }) {
   );
 }
 
+/* Page to display all the big previous projects I've done before */
 const PreviousProject = () => {
 
   return (
-    <div style={{marginBottom: '100px', fontSize:20, wordSpacing:1.25, lineHeight:1.5, fontFamily: 'Poppins, sans-serif', marginTop:'8%'}}>
+    <div 
+      style={{
+        marginBottom: '100px', 
+        fontSize:20, 
+        wordSpacing:1.25, 
+        lineHeight:1.5, 
+        fontFamily: 'Poppins, sans-serif', 
+        marginTop:'8%'}}>
+      
       <h1 className='title' >Previous Projects</h1>      
       <a
         href="https://github.com/Arnice123"
@@ -49,7 +58,11 @@ const PreviousProject = () => {
         onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#2f363d')} // Lighter gray on hover
         onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#24292e')}
       >
-        <FaGithub style={{ marginRight: '10px', fontSize: '24px', color: '#ffffff' }} />
+        <FaGithub style={{ 
+          marginRight: '10px', 
+          fontSize: '24px', 
+          color: '#ffffff' 
+          }} />
         See the GitHub Projects
       </a>
 
