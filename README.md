@@ -20,6 +20,8 @@ This site is deployed using **GitHub Pages**. To view go to https://arnice123.gi
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+I chose the MIT License because I have no reason to put heavy restrictions on people who want to use my code here.
+
 
 ## 📬 Contact
 - Portfolio: [https://arnice123.github.io./](https://arnice123.github.io./)
