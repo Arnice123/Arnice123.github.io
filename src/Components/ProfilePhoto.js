@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProfilePhoto.css'; 
 
+/* Uses a Photo of me with a short bio about myself */
 const ProfilePhoto = () => {
   return (
     <div className='container'>
