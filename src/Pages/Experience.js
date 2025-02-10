@@ -1,15 +1,8 @@
 import React from 'react';
 import '../App.css'
 import { FaLinkedin } from 'react-icons/fa';
+import Section from "../Section.js"
 
-function Section({ title, children }) {
-  return (
-    <div style={{ marginBottom: 40 }}>
-      <h2 style={{ borderBottom: '2px solid pink', paddingBottom: 5 }}>{title}</h2>
-      {children}
-    </div>
-  );
-}
 
 const Experience = () => {
 
