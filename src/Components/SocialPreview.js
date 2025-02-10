@@ -1,5 +1,6 @@
 import React from 'react';
 
+/* Formating for the boxes in the socials tab */
 function SocialPreview({ href, icon, title, description, colour }) {
   return (
     <a

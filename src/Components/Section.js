@@ -1,5 +1,6 @@
 import React from 'react';
 
+/* For seperating different areas of code */
 function Section({ id, title, children }) {
   return (
     <div id={id} style={{ marginBottom: '40px' }}>

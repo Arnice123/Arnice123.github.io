@@ -3,6 +3,7 @@ import ProfilePhoto from '../Components/ProfilePhoto';
 import Button from '../Components/Button';
 import '../App.css'
 
+/* Main page, displays a short about me play links to my main socials at a quick press*/
 function Home() {
   return (
     <div style={{

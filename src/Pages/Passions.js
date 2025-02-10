@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css'
 import Section from "../Components/Section.js"
 
+/* Used for formating the box on the right side on the passion tab */
 function NavBar({href, name}) {
   return (
     <a
@@ -23,6 +24,7 @@ function NavBar({href, name}) {
   );
 }
 
+/* Page to display all my intrests and passions */
 const Passions = () => {
   return (
     <div style={{ display: 'flex', marginTop:'8%'}}>
