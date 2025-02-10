@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaTwitter, FaVoicemail, FaEnvelope } from 'react-icons/fa'; // Import icons
+import { FaLinkedin, FaGithub, FaEnvelope, FaInstagram, FaDiscord } from 'react-icons/fa';
 import SocialPreview from '../SocialPreview';
 import '../App.css'
 
@@ -9,7 +9,7 @@ const Socials = () => {
     <div
       style={{
         margin: 20,
-        fontFamily: 'Poppins, sans-serif', // Smooth font from Google Fonts
+        fontFamily: 'Poppins, sans-serif',
         textAlign: 'center',
       }}
     >
@@ -50,7 +50,23 @@ const Socials = () => {
           color="#333333"
         />
 
+        {/* Instagram Preview */}
+        <SocialPreview
+          href="https://www.instagram.com/arya._456/"
+          icon={<FaInstagram style={{ fontSize: '28px', marginRight: '15px' }} />}
+          title="Instagram"
+          description="Showcases Personal Life"
+          color="#E4405F"
+        />
         
+        {/* Discord Preview */}
+        <SocialPreview
+          href="http://discordapp.com/users/arnice123"
+          icon={<FaDiscord style={{ fontSize: '28px', marginRight: '15px' }} />}
+          title="Discord"
+          description="Connect with communities"
+          color="#7289DA"
+        />
       </div>
     </div>
   );
