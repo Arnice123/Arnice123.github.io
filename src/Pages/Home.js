@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
-import ProfilePhoto from '../ProfilePhoto';
-import Button from '../Button';
+import React from 'react';
+import ProfilePhoto from '../Components/ProfilePhoto';
+import Button from '../Components/Button';
 import '../App.css'
 
 function Home() {
   return (
     <div style={{
       margin: 20,
-      fontFamily: 'Poppins, sans-serif'
+      fontFamily: 'Poppins, sans-serif',
+      marginTop:'8%'
     }}>
       <h1 className='title'>About Me</h1>
       <ProfilePhoto /> {}

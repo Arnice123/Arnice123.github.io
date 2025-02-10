@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css'
-import '../Button.css';
+import { FaGithub } from 'react-icons/fa';
 
 function ProjectLink({ title, link, name, description, image_path, alt }) {
   return (
@@ -26,15 +26,31 @@ function ProjectLink({ title, link, name, description, image_path, alt }) {
 const PreviousProject = () => {
 
   return (
-    <div style={{marginBottom: '100px', fontSize:20, wordSpacing:1.25, lineHeight:1.5, fontFamily: 'Poppins, sans-serif'}}>
-      <h1 className='title' >Previous Projects</h1>
-
-      <a href="https://github.com/Arnice123" style={{margin: 20}} className="button">
-        <img
-          src="/images/Github.png" 
-          alt="Github Icon"
-          className="button-image"
-        />
+    <div style={{marginBottom: '100px', fontSize:20, wordSpacing:1.25, lineHeight:1.5, fontFamily: 'Poppins, sans-serif', marginTop:'8%'}}>
+      <h1 className='title' >Previous Projects</h1>      
+      <a
+        href="https://github.com/Arnice123"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          backgroundColor: '#24292e', // GitHub's dark gray
+          color: '#ffffff', // White text
+          padding: '10px 20px',
+          borderRadius: '5px',
+          textDecoration: 'none',
+          fontSize: '16px',
+          fontWeight: 'bold',
+          fontFamily: 'Arial, sans-serif',
+          transition: 'background-color 0.3s ease',
+          marginLeft: 20
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#2f363d')} // Lighter gray on hover
+        onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#24292e')}
+      >
+        <FaGithub style={{ marginRight: '10px', fontSize: '24px', color: '#ffffff' }} />
+        See the GitHub Projects
       </a>
 
       <ProjectLink

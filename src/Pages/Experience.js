@@ -1,13 +1,13 @@
 import React from 'react';
 import '../App.css'
 import { FaLinkedin } from 'react-icons/fa';
-import Section from "../Section.js"
+import Section from "../Components/Section.js"
 
 
 const Experience = () => {
 
   return (
-    <div style={{marginBottom: '100px',margin: '10px', fontSize:20, wordSpacing:1.25, lineHeight:1.5, color: '#FFFFFF', fontFamily: 'Poppins, sans-serif'}}>
+    <div style={{marginBottom: '100px',margin: '10px', fontSize:20, wordSpacing:1.25, lineHeight:1.5, color: '#FFFFFF', fontFamily: 'Poppins, sans-serif', marginTop:'8%'}}>
       <h1 className='title'>Experience</h1>
       {/* Job Section */}
       <Section title="Job Experience">

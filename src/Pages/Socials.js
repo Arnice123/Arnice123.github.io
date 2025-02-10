@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope, FaInstagram, FaDiscord } from 'react-icons/fa';
-import SocialPreview from '../SocialPreview';
+import SocialPreview from '../Components/SocialPreview.js';
 import '../App.css'
 
 const Socials = () => {
@@ -11,6 +11,7 @@ const Socials = () => {
         margin: 20,
         fontFamily: 'Poppins, sans-serif',
         textAlign: 'center',
+        marginTop:'8%'
       }}
     >
       <h1 className='title'>My Socials</h1>
