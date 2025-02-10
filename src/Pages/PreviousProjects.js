@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css'
-import '../Components/Button.css';
 import { FaGithub } from 'react-icons/fa';
 
 function ProjectLink({ title, link, name, description, image_path, alt }) {
@@ -27,7 +26,7 @@ function ProjectLink({ title, link, name, description, image_path, alt }) {
 const PreviousProject = () => {
 
   return (
-    <div style={{marginBottom: '100px', fontSize:20, wordSpacing:1.25, lineHeight:1.5, fontFamily: 'Poppins, sans-serif'}}>
+    <div style={{marginBottom: '100px', fontSize:20, wordSpacing:1.25, lineHeight:1.5, fontFamily: 'Poppins, sans-serif', marginTop:'8%'}}>
       <h1 className='title' >Previous Projects</h1>      
       <a
         href="https://github.com/Arnice123"

@@ -25,7 +25,7 @@ function NavBar({href, name}) {
 
 const Passions = () => {
   return (
-    <div style={{ display: 'flex' }}>
+    <div style={{ display: 'flex', marginTop:'8%'}}>
       {/* Main content */}
       <div
         style={{
@@ -104,9 +104,10 @@ const Passions = () => {
           width: '230px',
           backgroundColor: '#333333',
           fontFamily: 'Poppins, sans-serif',
-          padding: '15px',
+          padding: '10px',
           borderRadius: '10px',
           boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
+          marginTop:'8%'
         }}
       >
         <NavBar href='#dnd' name="Dungeons and Dragons" />

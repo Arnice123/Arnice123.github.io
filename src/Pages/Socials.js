@@ -11,6 +11,7 @@ const Socials = () => {
         margin: 20,
         fontFamily: 'Poppins, sans-serif',
         textAlign: 'center',
+        marginTop:'8%'
       }}
     >
       <h1 className='title'>My Socials</h1>
